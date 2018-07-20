@@ -1,5 +1,6 @@
 var express = require('express');
 var app = express();
+app.use(express.static('./views/assets/'));
 app.set('view engine', 'pug');
 app.set('views','./views');
 
