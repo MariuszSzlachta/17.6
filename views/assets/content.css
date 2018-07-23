@@ -13,17 +13,27 @@ html {
   background-size: cover;
 }
 
-.app .app__title {
+.app__title {
   color: #fff;
   font-size: 6rem;
+  margin-top: 6rem;
   margin-bottom: 0;
   text-align: center;
 }
-.app .app__subtitle {
+.app__subtitle,
+.app__user {
   color: #fff;
   font-size: 3rem;
   text-align: center;
+  
 }
+.app__user {
+  overflow: hidden;
+}
+.app__user span {
+  font-weight: bold;
+}
+
 .gallery {
   justify-content: center;
   align-items: center;
@@ -44,7 +54,7 @@ html {
   top: 20px;
   right: 20px;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.4rem;
   text-transform: uppercase;
   color: #fff;
   border: 2px solid #fff;

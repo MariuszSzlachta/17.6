@@ -23,12 +23,12 @@ html {
   width: 100vw;
   height: 100vh;
 }
-.app .app__title {
+.app__title {
   color: #fff;
   font-size: 6rem;
   margin-bottom: 0;
 }
-.app .app__subtitle {
+.app__subtitle {
   color: #fff;
   font-size: 3rem;
 }
@@ -43,14 +43,14 @@ html {
   padding: 6rem 2rem;
   margin-top: 2rem;
 }
-.panel .panel__title {
+.panel__title {
   margin-bottom: 3rem;
   font-size: 4rem;
   font-weight: 600;
   font-style: italic;
   color: #444;
 }
-.panel .panel__link {
+.panel__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -73,19 +73,19 @@ html {
   align-items: center;
   margin-bottom: 3em;
 }
-.form .form__label {
+.form__label {
   color: #bbb;
   margin-bottom: 1rem;
   font-size: 2.4rem;
 }
-.form .form__input {
+.form__input {
   width: 50%;
   border: 0;
   border-bottom: 1px solid #333;
   margin-bottom: 3rem;
   font-size: 3rem;
 }
-.form .form__button {
+.form__button {
   width: 30%;
   height: 5rem;
   background: #ff0084;
@@ -98,23 +98,24 @@ html {
 }
  
 @media (max-width: 1200px) {
-  .panel .panel__title {
+  .panel__title {
     margin: 1rem;
   }
-  .form .form__input {
+  .form__input {
     width: 60%;
   }
-  .form .form__button,
-  .panel .panel__link {
+  .form__button,
+  .panel__link {
     width: 60%;
   }
 }
 
 @media (max-width: 1024px) {
-  .app .app__title {
+  .app__title {
     font-size: 4rem;
   }
   .panel {
+    width: 60%;
     margin-top: 0;
     padding: 4rem 2rem;
   }
@@ -122,26 +123,43 @@ html {
 
 @media (max-width: 600px) {
 
-  .app .app__title {
+  .app__title {
     font-size: 6rem;
     text-align: center;
   }
-  .app .app__subtitle {
+  .app__subtitle {
     text-align: center;
   }
   .panel {
     width: 90%;
   }
+  .form__label,
+  .form__input {
+    font-size: 2rem;
+  }
 }
 
+@media (max-width: 400px) {
+  .app {
+    height: auto;
+  }
+  .app__title {
+    font-size: 4rem;
+  }
+  .app__subtitle {
+    font-size: 2.4rem;
+  }
+  .container {
+    height: auto;
+  }
+  .panel__title {
+    font-size: 3rem;
+  }
+  .panel__link {
+    margin-top: 1rem;
+  }
+}
 
-
-
-
-
-
-
-/* 
 @media (max-width: 992px) and (orientation: landscape){
   .app {
     height: auto;
@@ -149,4 +167,4 @@ html {
   .container {
     height: auto;
   }
-} */
+}

@@ -2,6 +2,7 @@ doctype html
 html
   head
     title Login
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
     link(rel="stylesheet", href="site.css", type="text/css")
     
   body.app
@@ -9,10 +10,10 @@ html
       h1.app__title Virtuos
       p.app__subtitle Show your photos to the entire world!
       div.panel
-        h2.panel__title Sign in
+        h2.panel__title Sign in 
         form.form(action="/auth/google")
-          label.form__label(for="input-email") email:
-          input.form__input(type="email" id="input-email")
+          label.form__label(for="input-username") username:
+          input.form__input(type="text" id="input-username" name="username")
           label.form__label(for="input-pass") password:
           input.form__input(type="password" id="input-pass")
           button.form__button(type="submit") login

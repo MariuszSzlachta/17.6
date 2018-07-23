@@ -8,6 +8,12 @@ html
     h1.app__title Virtuos
     p.app__subtitle Browse your gallery
 
+    if username
+      p.app__user Welcome: <span> #{username}! </span>
+    else 
+      p.app__user Welcome: <span> unknown! </span>
+    
+
     section.gallery
       <img src="http://via.placeholder.com/350x200" alt="picture"> 
       <img src="http://via.placeholder.com/350x200" alt="picture"> 
